@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>C191 Study Guide -shianawilson24</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">C191 Study Guide -shianawilson24</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+										<li>
+											<a href="#">Phasellus consequat</a>
+											<ul>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+												<li><a href="#">Nisl sed aliquam</a></li>
+												<li><a href="#">Dolore adipiscing</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Veroeros feugiat</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Units 1-3</a></li>
+								<li><a href="right-sidebar.html">Units 4-6</a></li>
+								<li><a href="no-sidebar.html">Units 7-9</a></li>
+								<li class="current"><a href="tentotwelve.html">Units 10-12</a></li>
+								
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<header>
+									<h2>Units 10-12</h2>
+									<p>Vocab</p>
+								</header>
+								<h3>File System Concepts</h3>
+								<br>
+								<ul>
+									<li><strong>File:</strong> A named collection of information managed on secondary storage by the file system. Users can view it as a single abstract unit of data storage.</li>
+									<li><strong>Records:</strong> Items identified with a file by a record number or unique key field, e.g., student ID.</li>
+									<li><strong>Access Method:</strong> A set of operations provided by the OS to access files. Common methods include sequential and direct access.</li>
+									<li><strong>Metadata:</strong> Information about the format and organization of a file's data, generally stored in a file's header.</li>
+									<li><strong>Magic Number:</strong> A sequence of characters at the start of the file header identifying the file type.</li>
+									<li><strong>File Extension:</strong> A sequence of characters following the filename extension, used to identify the file type.</li>
+									<li><strong>File Directory or Folder:</strong> A special-purpose file that records information about other files and directories.</li>
+									<li><strong>Tree Structure Directory Hierarchy:</strong> A collection of directories organized such that every directory points to zero or more files or directories.</li>
+									<li><strong>Absolute Path:</strong> Uniquely identifies a file by the concatenation of directory and file names leading from the root.</li>
+									<li><strong>Relative Path:</strong> Concatenation of file name starting with the current directory.</li>
+									<li><strong>Change:</strong> Changing the current directory to another directory specified by a path name.</li>
+									<li><strong>Create:</strong> Creating a new directory and an entry in the current working directory pointing to the new directory.</li>
+									<li><strong>Move:</strong> Moving a file or directory from one directory to another.</li>
+									<li><strong>Rename:</strong> Changing the name of a file or directory specified by a path name.</li>
+									<li><strong>List:</strong> Listing all files and other attributes of files contained in the directory specified by a path name.</li>
+									<li><strong>Find:</strong> Finding a file or directory specified by name.</li>
+									<li><strong>File Attributes:</strong> Include size, type, location, protection, and use.</li>
+									<li><strong>File Control Block (FCB):</strong> A data structure associated with the file name containing all relevant attributes of the file.</li>
+									<li><strong>Disk Block:</strong> A fixed sequence of bits on a disk, accessed as a single unit.</li>
+									<li><strong>Contiguous Block Allocation Scheme:</strong> Files are mapped into contiguous disk blocks.</li>
+									<li><strong>Linked Block Allocation Scheme:</strong> Blocks containing a file may be scattered, with each block pointing to the next.</li>
+									<li><strong>Clustered Block Allocation:</strong> Links clusters of contiguous blocks, reducing the number of pointers.</li>
+									<li><strong>Allocation Table:</strong> An array where each entry corresponds to a disk block, tracking which blocks belong to a file.</li>
+									<li><strong>Index Block Allocation Scheme:</strong> File blocks may reside anywhere on the disk, with an index table tracking blocks.</li>
+									<li><strong>Bitmap:</strong> A data structure where each bit represents a disk block (1 for allocated, 0 for free).</li>
+									<li><strong>Opcode:</strong> Specifies the type of operation requested.</li>
+									<li><strong>Operands:</strong> Describe the parameters of the requested operation.</li>
+									<li><strong>Busy:</strong> A register flag indicating whether the device is busy or idle.</li>
+									<li><strong>Status:</strong> A register indicating the success or failure of the last I/O operation.</li>
+									<li><strong>Data Buffer:</strong> Holds data for transfer between the device and main memory.</li>
+									<li><strong>Programmed I/O:</strong> A method where the CPU performs copying of all data between the device controller and memory.</li>
+									<li><strong>Polling:</strong> Technique to determine device status by reading a flag set by the device controller.</li>
+									<li><strong>Direct Memory Access (DMA):</strong> Allows devices to access main memory directly without CPU involvement.</li>
+									<li><strong>Buffer:</strong> A memory area storing data being transferred.</li>
+									<li><strong>Buffer Swapping:</strong> Technique using two buffers for overlapping producer and consumer processes.</li>
+									<li><strong>Circular Buffer:</strong> A fixed array of buffer slots filled by the producer and emptied by the consumer.</li>
+									<li><strong>Cache:</strong> Temporary copy of data stored in reserved memory to improve performance.</li>
+									<li><strong>Spool:</strong> A buffer that holds output for devices like printers that cannot handle data streams.</li>
+									<li><strong>Sense Key:</strong> Information in the status register indicating an error.</li>
+									<li><strong>Advanced Configuration and Power Interface (ACPI):</strong> Firmware managing hardware aspects including power and device information.</li>
+									<li><strong>Mount Table:</strong> In-memory data structure containing information about each mounted file system.</li>
+									<li><strong>Streams:</strong> A Unix I/O feature allowing dynamic assembly of driver pipelines.</li>
+									<li><strong>Stream Head:</strong> Interface between streams and user processes.</li>
+									<li><strong>Driver End:</strong> Interface between streams and the device being controlled.</li>
+									<li><strong>Stream Modules:</strong> Modules of functionality loadable into a stream.</li>
+									<li><strong>Flow Control:</strong> Method to pause the sender of I/O to limit data flow rate.</li>
+									<li><strong>Front-End Processors:</strong> Small computers performing tasks in overall systems, managing I/O and offloading the general-purpose CPU.</li>
+									<li><strong>Terminal Concentrator:</strong> A type of front-end processor for terminals.</li>
+									<li><strong>I/O Channel:</strong> A dedicated special-purpose CPU found in large systems for I/O operations.</li>
+								</ul>
+								
+								<h3>Disk Operations</h3>
+								<br>
+								<ul>
+									<li><strong>Disk Blocks:</strong> Fixed-size units of storage on a disk.</li>
+									<li><strong>Seek Time:</strong> Time required to move the read/write head to the track containing the desired data.</li>
+									<li><strong>Rotational Delay:</strong> Time to wait for the desired data to pass under the read/write head.</li>
+									<li><strong>Data Transfer Time:</strong> Time to transfer data to or from the disk.</li>
+									<li><strong>Peak Transfer Time:</strong> Rate at which data is streamed to or from the disk.</li>
+									<li><strong>Sustained Data Rate:</strong> Rate at which the disk can continuously transfer data, including seek time and overhead.</li>
+									<li><strong>Shortest Seek Time First (SSTF):</strong> Scheduling algorithm selecting the request requiring the shortest travel distance.</li>
+									<li><strong>SCAN Scheduling Algorithm:</strong> Services requests in one direction; when the outmost request is serviced, the head moves back to the opposite end.</li>
+								</ul>
+								
+								<h3>Input/Output Management</h3>
+								<br>
+								<ul>
+									<li><strong>Programmed I/O:</strong> Transfers data one byte at a time between CPU and peripheral device.</li>
+									<li><strong>Direct Memory Access (DMA):</strong> Allows devices to transfer large amounts of data directly to/from memory.</li>
+									<li><strong>Scatter-Gather:</strong> Input/Output method where multiple sources/destinations are specified in one command.</li>
+									<li><strong>Double Buffering:</strong> Technique involving two buffers to decouple producers and consumers.</li>
+									<li><strong>Cycle Stealing:</strong> DMA device temporarily uses the bus, preventing the CPU from using it.</li>
+									<li><strong>Direct Virtual Memory Access (DVMA):</strong> DMA-like method for virtualized memory access.</li>
+									<li><strong>Interrupt:</strong> Signal indicating the need for CPU attention, typically for handling I/O requests.</li>
+									<li><strong>Interrupt Service Routine (ISR):</strong> Function executed in response to an interrupt.</li>
+									<li><strong>Non-Maskable Interrupt (NMI):</strong> High-priority interrupt that cannot be ignored or masked.</li>
+									<li><strong>Interrupt Vector:</strong> Table of pointers to ISR routines for handling various interrupts.</li>
+								</ul>
+								
+								<h3>Device Interfaces</h3>
+								<br>
+								<ul>
+									<li><strong>Device Controller:</strong> Hardware component managing communication between the CPU and a peripheral device.</li>
+									<li><strong>Memory-Mapped I/O:</strong> Technique where device registers are mapped to memory addresses.</li>
+									<li><strong>Bus:</strong> A communication system connecting multiple components, e.g., PCIe.</li>
+									<li><strong>Expansion Bus:</strong> Interface providing additional bus lines for connecting more devices.</li>
+									<li><strong>Network Interface Card (NIC):</strong> Hardware for network connectivity and communication.</li>
+								</ul>
+								
+								<h3>File and Disk Management Tools</h3>
+								<br>
+								<ul>
+									<li><strong>File Allocation Table (FAT):</strong> File system structure managing file and disk space allocation.</li>
+									<li><strong>Error Detection and Correction:</strong> Methods for detecting and correcting errors, e.g., parity bits, ECC.</li>
+									<li><strong>File Control Block (FCB):</strong> Data structure storing information about a file.</li>
+									<li><strong>Device Status Table:</strong> Data structure holding device information and status.</li>
+								</ul>
+								
+								<h3>Specialized Concepts</h3>
+								<br>
+								<ul>
+									<li><strong>Front-End Processor:</strong> Computer managing peripheral devices to offload tasks from the main CPU.</li>
+									<li><strong>Terminal Concentrator:</strong> Device managing multiple terminals for efficient communication.</li>
+									<li><strong>High-Performance Timers:</strong> Specialized timers providing accurate and fast timing functions.</li>
+									<li><strong>Programmable Interval Timer (PIT):</strong> Timer allowing programs to set timing intervals.</li>
+									<li><strong>Network Time Protocol (NTP):</strong> Protocol for synchronizing clocks over a network.</li>
+									<li><strong>Advanced Configuration and Power Interface (ACPI):</strong> Interface for managing hardware configurations and power settings.</li>
+								</ul>
+				
+							
+							
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<ul class="links">
+						<li>&copy; Untitled. All rights reserved.</li>
+					</ul>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>C191 Study Guide -shianawilson24</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">C191 Study Guide -shianawilson24</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+										<li>
+											<a href="#">Phasellus consequat</a>
+											<ul>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+												<li><a href="#">Nisl sed aliquam</a></li>
+												<li><a href="#">Dolore adipiscing</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Veroeros feugiat</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Units 1-3</a></li>
+								<li class="current"><a href="right-sidebar.html">Units 4-6</a></li>
+								<li><a href="no-sidebar.html">Units 7-9</a></li>
+								<li><a href="tentotwelve.html">Units 10-12</a></li>
+								
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<header>
+									<h2>Units 4-6</h2>
+									<p>Vocab</p>
+								</header>
+								<h3 style="text-align: center;">Scheduling Concepts</h3>
+								<br>
+								<h4>Non preemptive vs preemptive: </h4>
+								<p> Non preemptive scheduling algorithms allow a process to continue until it terminates or gets blocked. While preemptive scheduling algorithms stops the current running process and choose another process whenever and wherever.</p>
+								
+					
+								<ul>
+									<li><strong>Long-Term Scheduling:</strong> Decides when a process enters the ready list (RL) to compete for CPU time.</li>
+									<li><strong>Short-Term Scheduling:</strong> Decides which process runs next on the CPU.</li>
+									<li><strong>Thread Priority:</strong> A numerical value indicating the importance of a process relative to others; used by the scheduler to determine which process runs next.</li>
+									<li><strong>Arbitrary Rule:</strong> Applied when two or more processes have the same priority to decide which should receive CPU time.</li>
+									<li><strong>Arrival:</strong> The point in time when the process enters the ready list (RL).</li>
+									<li><strong>Departure:</strong> The point in time when the process leaves the RL by entering a blocked state or by terminating.</li>
+									<li><strong>Real Time in System:</strong> The actual time a process has spent in the system since arrival.</li>
+									<li><strong>Total CPU Time:</strong> The time a process consumes between arrival and departure; also known as CPU burst.</li>
+									<li><strong>External Priority:</strong> A numeric priority value assigned to a process at creation.</li>
+									<li><strong>Batch Process:</strong> Performs long-running, repetitive tasks that do not require user intervention.</li>
+									<li><strong>Time Quantum:</strong> The smallest amount of time (typically 10 to 100 milliseconds) a process can utilize the CPU.</li>
+
+								</ul>
+								
+								<h3 style="text-align: center;">Scheduling Algorithms</h3>
+								<br>
+								<h4>Non-preemptive Scheduling Algorithms</h4>
+								<ul>
+									<li><strong>First Come First Serve (FCFS):</strong> Schedules processes by arrival time; non-preemptive.</li>
+									<li><strong>Shortest Job Next (SJN):</strong> Schedules processes by total CPU time required; non-preemptive.</li>
+								
+								</ul>
+								<br>
+								<h4>Preemptive Scheduling Algorithms</h4>
+								<ul>
+									
+									<li><strong>Shortest Remaining Time (SRT):</strong> Schedules by remaining CPU time needed; preemptive.</li>
+									<li><strong>Round Robin:</strong> Uses a single queue; each process runs for a time quantum (Q) before moving to the back of the queue. Preemptive</li>
+									<li><strong>Multi-Level Scheduling (MLS):</strong> Uses different time quantums for each priority level, dynamically changing process priorities to address starvation and fairness.</li>
+									<li><strong>Multi-Level Feedback Queue:</strong> Newly arriving processes start at the highest priority; if they exceed the quantum, they move to a lower priority queue with a larger quantum.</li>
+								</ul>
+								
+								<h4>Real-Time Scheduling (Also Preemptive)</h4>
+								<ul>
+									<li><strong>Rate Monotonic Scheduling:</strong> Schedules by period; shorter periods have higher priority; preemptive.</li>
+									<li><strong>Earliest Deadline First:</strong> Schedules by shortest remaining time until the deadline; preemptive.</li>
+								</ul>
+								
+								<h3 style="text-align: center;">Concurrency and Synchronization</h3>
+								<br>
+								<ul>
+									<li><strong>Concurrency:</strong> Multiple processes or threads executing simultaneously; achieved through time-sharing on a single CPU or parallel execution on multiple CPUs.</li>
+									<li><strong>Critical Section:</strong> A segment of code that cannot be executed by more than one process at a time.</li>
+									<li><strong>Guaranteeing Mutual Exclusion:</strong> Ensures only one process executes within the critical section (CS).</li>
+									<li><strong>Preventing Lockout:</strong> Ensures that a process attempting to enter the CS does not prevent others from entering.</li>
+									<li><strong>Preventing Starvation:</strong> Ensures that no process is indefinitely denied entry to the CS while others wait.</li>
+									<li><strong>Preventing Deadlock:</strong> Avoids scenarios where multiple processes block each other.</li>
+									<li><strong>Semaphore:</strong> A primitive for solving synchronization problems.</li>
+									<li><strong>Bounded Buffer Problem:</strong> A classic synchronization problem illustrating process cooperation.</li>
+									<li><strong>Busy Waiting:</strong> Repeatedly executing a loop while waiting for a condition to change.</li>
+									<li><strong>Monitor:</strong> A high-level synchronization primitive using P&V operations, encapsulating data and functions.</li>
+									<li><strong>Resource Allocation Graph:</strong> Displays the current allocation of resources to processes and their requests for new resources.</li>
+								</ul>
+				
+							
+						
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+			
+			<section id="footer">
+				<ul class="links">
+					<li>&copy; Untitled. All rights reserved.</li>
+				</ul>
+			</section>	
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

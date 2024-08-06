@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of a Computer System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basics of a Computer System</h1>
+    
+    <h2>CPU (Central Processing Unit)</h2>
+    <p>Executes machine instructions to perform operations on the contents of registers and memory locations.</p>
+    
+    <h2>RAM (Random Access Memory)</h2>
+    <p>Linear sequence of addressable bytes or words that hold programs and data.</p>
+    
+    <h2>Secondary Storage</h2>
+    <p>Disk and other devices with complex sequences of low-level operations to store and access data in discrete blocks.</p>
+    
+    <h2>I/O Devices</h2>
+    <p>Read and write registers of the device controllers.</p>
+    
+    <h2>Operating System (OS)</h2>
+    <h3>Definition:</h3>
+    <p>Software that runs on bare hardware, providing essential support for efficient and safe use of applications.</p>
+    
+    <h3>Key Components and Concepts</h3>
+    <ul>
+        <li><strong>Kernel:</strong> The minimal set of functions necessary to manage system resources safely and efficiently.</li>
+        <li><strong>Privileged Instructions:</strong> Perform critical operations that access I/O devices and CPU’s status/control registers; only executable by the OS kernel.</li>
+        <li><strong>Kernel Mode:</strong> CPU state allowing both privileged and non-privileged instructions.</li>
+        <li><strong>User Mode:</strong> CPU state allowing only non-privileged instructions.</li>
+        <li><strong>Graphic User Interface (GUI):</strong> Presents icons on the screen for users to invoke services or reveal additional tasks (e.g., website or application).</li>
+    </ul>
+    
+    <h3>Multiprogramming and Time Sharing</h3>
+    <ul>
+        <li><strong>Multiprogramming:</strong> Keeps several programs active in memory and switches execution among them to maximize CPU and resource usage.</li>
+        <li><strong>Time Sharing (Multitasking):</strong> Extension of multiprogramming where the CPU switches among active computations to guarantee acceptable response times, creating the illusion of separate virtual CPUs for each computation.</li>
+    </ul>
+    
+    <h3>Shell Commands and Scripts</h3>
+    <ul>
+        <li><strong>Shell Commands:</strong>
+            <ul>
+                <li><strong>DIR:</strong> Displays a list of files and subdirectories.</li>
+                <li><strong>COPY:</strong> Copies files to another location.</li>
+                <li><strong>WC:</strong> Counts words, lines, and characters in a text file.</li>
+                <li><strong>DEL:</strong> Deletes files.</li>
+            </ul>
+        </li>
+        <li><strong>Shell Script:</strong> Program that combines multiple commands and control statements into a named unit interpreted by the shell.</li>
+    </ul>
+    
+    <h3>System Calls and Interrupts</h3>
+    <ul>
+        <li><strong>System Call:</strong> Request from an application for an OS service, typically implemented by a library function and a corresponding supervisor call.</li>
+        <li><strong>Supervisor Call (Kernel Call):</strong> Privileged instruction transferring execution control to a predefined location within the OS kernel.</li>
+        <li><strong>Interrupt:</strong> Event diverting program execution to a kernel location in response to hardware signals.</li>
+        <li><strong>Trap:</strong> Internal interrupt triggered by the currently executing instruction.</li>
+        <li><strong>Interrupt Handler:</strong> Kernel function invoked when an interrupt occurs.</li>
+    </ul>
+    
+    <h3>Moore’s Law and Bus</h3>
+    <ul>
+        <li><strong>Moore’s Law:</strong> Observation that the number of transistors in an integrated circuit doubles approximately every two years.</li>
+        <li><strong>Bus:</strong> Provides access between components and shared memory in a computer system.</li>
+    </ul>
+    
+    <h3>Device Driver and Network Computing</h3>
+    <ul>
+        <li><strong>Device Driver:</strong> Understands the device controller and provides a uniform interface to the device for the OS.</li>
+        <li><strong>Network Computers (Thin Clients):</strong> Terminals for web-based computing, used for security and easier maintenance.</li>
+        <li><strong>Firewalls:</strong> Used to protect networks from security breaches.</li>
+        <li><strong>Mobile Computing:</strong> Refers to computing on handheld devices like smartphones and tablets.</li>
+    </ul>
+    
+    <h3>Compute and File-Server Systems</h3>
+    <ul>
+        <li><strong>Compute Server System:</strong> Provides interfaces for clients to send requests to perform actions (e.g., reading data).</li>
+        <li><strong>File-Server System:</strong> Provides file system interfaces for creating, updating, reading, and deleting files (e.g., web servers).</li>
+        <li><strong>Cloud Computing:</strong> Delivers computing, storage, and applications as services across a network, using virtualization as a base.</li>
+        <li><strong>ASICs:</strong> Performs tasks without an operating system.</li>
+    </ul>
+    
+    <h3>Historical Generations of Computer Systems</h3>
+    <ul>
+        <li><strong>Gen 1: Vacuum Tubes:</strong> No OS support; programming done using machine language.</li>
+        <li><strong>Gen 2: Transistors:</strong> Batch OS; programming with punch cards, introduction of multiprogramming.</li>
+        <li><strong>Gen 3: Integration Circuits:</strong> Interactive multi-user OS; development of interrupts for time sharing and interaction with peripherals.</li>
+        <li><strong>Gen 4: VLSI (Very Large Scale Integration):</strong> Desktop and laptop OS; responsible for booting, multitasking, GUI, etc.</li>
+        <li><strong>Gen 5: Networking Hardware:</strong> OS for supercomputers, distributed systems, mobile devices; parallel processing, the Internet, privacy, security, and communication.</li>
+    </ul>
+    
+    <h3>Client-Server and Peer-to-Peer Systems</h3>
+    <ul>
+        <li><strong>Client-Server System:</strong> General structure providing services to clients.</li>
+        <li><strong>Peer-to-Peer (P2P) Computing:</strong> Distributed system model with no centralized service; nodes act as both clients and servers. Examples: File-sharing services (Napster, Gnutella), Skype.</li>
+    </ul>
+    
+    <h3>Embedded Systems</h3>
+    <p><strong>Definition:</strong> Always runs real-time operating systems for specific tasks.</p>
+    
+    <h3>Command Interpreter</h3>
+    <p><strong>Definition:</strong> Known as shells, they allow users to enter commands directly to the OS.</p>
+    <p><strong>Main Function:</strong> Execute user-specified commands.</p>
+    
+    <h3>System Calls Categories:</h3>
+    <ul>
+        <li><strong>Process Control:</strong> Create/terminate processes, load/execute, set attributes, etc.</li>
+        <li><strong>File Management:</strong> Create/delete, open/close, read/write, set attributes.</li>
+        <li><strong>Device Management:</strong> Request/release device, read/write, set attributes.</li>
+        <li><strong>Information Maintenance:</strong> Get/set time, system data, attributes.</li>
+        <li><strong>Communications:</strong> Create/delete connections, send/receive messages.</li>
+        <li><strong>Protection:</strong> Get/set file permissions.</li>
+    </ul>
+
+</body>
+</html>

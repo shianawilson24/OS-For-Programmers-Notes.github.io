@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Dopetrope by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>C191 Study Guide -shianawilson24</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">C191 Study Guide -shianawilson24</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+										<li>
+											<a href="#">Phasellus consequat</a>
+											<ul>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+												<li><a href="#">Nisl sed aliquam</a></li>
+												<li><a href="#">Dolore adipiscing</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Veroeros feugiat</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Units 1-3</a></li>
+								<li><a href="right-sidebar.html">Units 4-6</a></li>
+								<li class="current"><a href="no-sidebar.html">Units 7-9</a></li>
+								<li><a href="tentotwelve.html">Units 10-12</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<header>
+									<h2>Units 7 - 9</h2>
+									<p>Vocab</p>
+								</header>
+								<h3 style="text-align: center;">Modules and Program Relocation</h3>
+								<br>
+								<ul>
+									<li><strong>Source Module:</strong> A program or program component written in a symbolic language like C or assembly language, which must be translated by a compiler or assembler into executable machine code.</li>
+									<li><strong>Object Module:</strong> The machine language output of a compiler or assembler generated from a source module. It may be self-contained and executable, or multiple object modules may be linked together into a load module by a linker or linkage editor.</li>
+									<li><strong>Load Module:</strong> A program or a combination of programs in a form ready to be loaded into the main memory and executed next.</li>
+									<li><strong>Program Relocation:</strong> The act of moving a program component from one address space to another. This can be between two logical spaces or from a logical address space to a physical address space.
+										<h6> Different types of relocation:</h6>
+										<ul>
+											<ul>
+												<li><strong>Static Relocation:</strong> Binds all logical addresses to physical addresses prior to execution.</li>
+												<li><strong>Dynamic Relocation:</strong> Postpones the binding of a logical address to a physical address until the addressed item is accessed during execution.</li>
+												<li><strong>Relocation Register:</strong> Contains the physical starting address of a program or program component in memory.</li>
+											</ul>
+
+										</ul>
+										
+									</li>
+									<li><strong>Logical Address Space:</strong> An abstraction of physical memory, consisting of a sequence of imaginary memory locations in a range from 0 to m-1, where m is the size of the logical address space.</li>
+									<li><strong>Logical Address:</strong> An integer in the range of 0 to m-1 that identifies a word in logical address space. Prior to execution, a logical address space is mapped to a portion of physical memory and the program is copied into the corresponding locations.</li>
+								</ul>
+							
+								<h3>Memory Allocation</h3>
+								<br>
+								<ul>
+									<li><strong>First Fit:</strong> Allocates the first hole large enough to accommodate the request, starting from the beginning of the list.</li>
+									<li><strong>Next Fit:</strong> Starts each search at the point of the last allocation.</li>
+									<li><strong>Best Fit:</strong> Searches the entire list and chooses the smallest hole large enough to accommodate the request.</li>
+									<li><strong>Worst Fit:</strong> Always chooses the largest available hole for any request.</li>
+									<li><strong>External Memory Fragmentation:</strong> The loss of usable memory space due to holes between allocated blocks of variable sizes.</li>
+									<li><strong>50% Rule:</strong> States that if the probability of finding the exact match for a request approaches 1/3, then one-third of all memory partitions are holes and two-thirds are occupied blocks.</li>
+									<li><strong>Swapping:</strong> The temporary removal of a module from memory. The module is saved on a disk and later moved back to memory. Dynamic relocation is necessary so that the module can be placed into a different location without modification.</li>
+									<li><strong>Memory Compaction:</strong> The systematic shifting of modules in memory, generally in one direction, to consolidate multiple disjoint holes into one large hole.</li>
+									<li><strong>Sharing:</strong> The act of linking the same copy of a module to multiple other modules. Sharing improves memory utilization by allowing multiple processes to share common routines or services.</li>
+									<li><strong>Linking:</strong> The act of resolving external references among object modules, which can be done statically before loading or dynamically while the program is already executing.</li>
+								</ul>
+							
+								<h3>Paging and Segmentation</h3>
+								<br>
+								<ul>
+									<li><strong>Page:</strong> A fixed, contiguous block of a logical address space identified by a single number, the page number.</li>
+									<li><strong>Page Frame:</strong> A fixed-size contiguous block of physical memory identified by a single number, the page frame number. It is the smallest unit of data for memory management and may contain a copy of any page.</li>
+									<li><strong>Page Table:</strong> An array that keeps track of which pages of a given logical address space reside and which page frame each page occupies. Each page table entry corresponds to one page and contains the starting address of the frame containing the page.</li>
+									<li><strong>Internal Fragmentation:</strong> Loss of usable memory space due to the mismatch between the page size and the size of a program, creating a hole at the end of the program's last page.</li>
+									<li><strong>Segment:</strong> A variable-size block of a logical address space identified by a single number, the segment number.</li>
+									<li><strong>Segment Table:</strong> An array that keeps track of which segment resides in which area of physical memory. Each entry corresponds to one segment and contains the starting address of the segment.</li>
+									<li><strong>Translation Lookaside Buffer (TLB):</strong> A fast associative memory buffer that maintains recent translations of logical addresses to frames in physical memory for faster retrieval.
+										<ul>
+											<li><strong>Principle of Locality:</strong> States that locations accessed recently are more likely to be accessed again than locations in the distant past. The TLB uses this principle to always replace the least recently accessed entry.</li>
+											<li><strong>Hit Ratio:</strong> The fraction of memory accesses that find a match in the TLB. A higher TLB hit rate reduces the overhead of address translation.</li>
+										</ul>
+									</li>
+								</ul>
+							
+								<h3>Virtual Memory and Page Replacement</h3>
+								<br>
+								<ul>
+									<li><strong>Virtual Memory (VM):</strong> A collection of one or more logical address spaces, each of which may exceed the size of physical memory. A logical address is referenced to a physical address, creating a single large continuous address space per process.
+										<ul>
+											<li><strong>Paged VM:</strong> Creates a single large continuous address space per process.</li>
+											<li><strong>Paged VM with Segmentation:</strong> Creates multiple large address spaces per process, each of which is paged.</li>
+										</ul>
+									</li>
+									<li><strong>Demand Paging:</strong> The principle of loading a page into memory only when it is needed, rather than at the start of execution, enabling the implementation of virtual memory.</li>
+									<li><strong>Present Bit:</strong> A binary flag in each page table entry indicating whether the corresponding page is currently resident in memory. If a page is resident, the entry points to the frame that holds the page.</li>
+									<li><strong>Page Fault:</strong> An interrupt that occurs when the program attempts to reference a non-resident page. The operating system finds the page on disk, copies it into a frame, and sets the present bit to one.</li>
+									<li><strong>Page Replacement:</strong> The act of overriding a page in memory with a different page loaded from the disk when needed.</li>
+									<li><strong>Modified Bit:</strong> A binary flag in each page table entry indicating whether the corresponding page has been modified during execution. The modified bit is set to one automatically by any instruction that stores data into the page, and is used by the operating system to minimize the movement of data to disk.</li>
+									<li><strong>Page Reference String:</strong> The sequence of page numbers referenced by an executing program during a given time interval. It is used to compare different page replacement algorithms by counting the number of page faults generated.</li>
+								</ul>
+							
+								<h3>Page Replacement Algorithms</h3>
+								<br>
+								<ul>
+									<li><strong>Optimal Page Replacement Algorithm:</strong> Generates the smallest number of page faults for any reference string. This algorithm is unrealizable because replacement decisions depend on future references, which are unknown at runtime. However, it provides a useful lower bound on the number of page faults for comparison with other algorithms.</li>
+									<li><strong>First-In-First-Out (FIFO) Page Replacement Algorithm:</strong> Selects the page that has been resident in memory for the longest time. This algorithm is easy to implement, requiring only a single pointer to designate the oldest page in memory. When a page is replaced, the pointer is advanced to the next frame modulo.</li>
+									<li><strong>Least Recently Used (LRU) Page Replacement Algorithm:</strong> Selects the page that has not been referenced for the longest time. Implementation requires a queue of length n, where n is the number of memory frames. The queue contains the numbers of all resident pages.</li>
+									<li><strong>Reference Bit:</strong> A bit associated with a page that is set automatically by the hardware whenever the page is referenced by any instruction.</li>
+									<li><strong>Aging Register:</strong> Associated with a page and shifted periodically to the right by one bit unless the most significant bit is set to one. The page is aging in the sense that the associated register value is steadily decreasing.</li>
+									<li><strong>Aging Page Replacement Algorithm:</strong> Does not maintain pages sorted in exact LRU order but groups pages referenced during a period of D consecutive references. Each period is represented by one bit in a periodically shifting aging register.</li>
+									<li><strong>Second Chance Page Replacement Algorithm:</strong> A coarse-grained approximation of LRU. The algorithm uses the reference bit to divide all pages into two categories: recently referenced and not recently referenced. A page is selected from the not recently referenced category.</li>
+									<li><strong>Third Chance Replacement Algorithm (Not Recently Used Page Algorithm):</strong> A coarse-grained approximation of LRU, servicing pages in different categories based on the four possible combinations of the reference bit and the modified bit.</li>
+								</ul>
+							
+								<h3>Working Set and Page Fault Frequency</h3>
+								<br>
+								<ul>
+									<li><strong>Optimal Working Set:</strong> The set of resident pages that will still be needed in the immediate future and thus should remain resident. The size of the working set varies with the program's behavior.</li>
+									<li><strong>Working Set at Time T:</strong> The set of pages referenced during the past D memory operations preceding time T.</li>
+									<li><strong>Working Set Page Replacement Algorithm:</strong> Uses a trailing window of size D superimposed on the reference string to determine the size and composition of the working set at time T.</li>
+									<li><strong>Page Fault Frequency (PFF) Replacement Algorithm:</strong> Takes a direct approach to controlling the page fault rate by adjusting the current resident set based on how frequently consecutive page faults occur.</li>
+									<li><strong>Page Fault Rate:</strong> The number of page faults (F) occurring during a number of memory references (T). The page fault rate can be expressed as P = F / T.</li>
+									<li><strong>Effective Access Time (EAT):</strong> The average time to access memory in the presence of page faults. The EAT depends on the frequency of page faults, which is calculated as 1 – P times M + P times S, where M is the time to access physical memory and S is the time to process a page fault.</li>
+								</ul>
+							
+								<h3>Load Control and Thrashing</h3>
+								<br>
+								<ul>
+									<li><strong>Load Control:</strong> The activity of determining how many processes should be running concurrently at any given time to maximize overall system performance.</li>
+									<li><strong>Thrashing:</strong> The execution state during which most of the time is spent moving pages between memory and the CPU, resulting in the CPU being mostly idle and no processes making real progress.</li>
+								</ul>
+							
+							</article>
+							
+
+					</div>
+				</section>
+
+		
+				<section id="footer">
+					<ul class="links">
+						<li>&copy; Untitled. All rights reserved.</li>
+					</ul>
+				</section>	
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

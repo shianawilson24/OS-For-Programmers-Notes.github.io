@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>C191 Study Guide -shianawilson24</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">C191 Study Guide -shianawilson24</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+										<li>
+											<a href="#">Phasellus consequat</a>
+											<ul>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+												<li><a href="#">Nisl sed aliquam</a></li>
+												<li><a href="#">Dolore adipiscing</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Veroeros feugiat</a></li>
+									</ul>
+								</li>
+								<li class="current"><a href="left-sidebar.html">Units 1-3</a></li>
+								<li><a href="right-sidebar.html">Units 4-6</a></li>
+								<li><a href="no-sidebar.html">Units 7-9</a></li>
+								<li><a href="tentotwelve.html">Units 10-12</a></li>
+								
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<header>
+									<h2>Units 1 - 3</h2>
+									<p>Vocab</p>
+								</header>
+								<ul>
+									<li><strong>Basics of a computer system:</strong> CPU, RAM, secondary storage, I/O devices</li>
+									<li><strong>OS (Operating System):</strong> Software that runs on the bare hardware of a computer and provides essential support for users to develop and use applications in the most efficient and safe manner.</li>
+									<li><strong>CPU:</strong> Machine instructions perform operations on contents of registers and memory locations</li>
+									<li><strong>Main memory:</strong> Physical memory is a linear sequence of addressable bytes or words that hold programs and data</li>
+									<li><strong>Secondary storage:</strong> Disk and other secondary storage devices are multi-dimensional structures which require complex sequences of low-level operations to store and access data organized in discrete blocks</li>
+									<li><strong>I/O devices:</strong> Read and write registers of the device controllers</li>
+									<li><strong>Multiprogramming:</strong> Technique that keeps several programs active in memory and switches execution among the different programs to maximize the use of the CPU and other resources</li>
+									<li><strong>Time sharing (multitasking):</strong> Extension of multiprogramming where the CPU is switched periodically among all active computations to guarantee acceptable response times to each user. It’s related to visualization by creating the illusion of having separate virtual CPUs for each computation.</li>
+									<li><strong>Kernel:</strong> The OS is the minimal set of functions necessary to manage the system resources safely and efficiently</li>
+									<li><strong>Privileged instruction:</strong> Performs critical operations that access I/O devices and the CPU’s status and control registers. Only the OS kernel is allowed to execute privileged instructions.</li>
+									<li><strong>Kernel mode:</strong> CPU state where both privileged and non-privileged instructions may be used</li>
+									<li><strong>User mode:</strong> CPU state where only non-privileged instructions may be used</li>
+									<li><strong>Graphic user interface (GUI):</strong> Presents various icons on the screen, which the user can click on in different ways to invoke services associated with the icons, or to reveal pull-down menus for additional tasks. (aka a website or application)</li>
+									<li><strong>Shell Commands:</strong></li>
+									<ul>
+										
+											<li><strong>DIR:</strong> Displays a list of files and subdirectories in a directory folder</li>
+											<li><strong>COPY:</strong> Copy one or more files to another location</li>
+											<li><strong>WC:</strong> Count the number of words, lines, and characters in a text file</li>
+											<li><strong>DEL:</strong> Delete one or more files</li>
+									</ul>
+									<li><strong>Shell script:</strong> Program that implements a new operation by combining multiple commands and control statements into one named unit interpreted by the shell</li>
+									<li><strong>System call:</strong> Request from an application for an OS service. Implemented by a library function that sets up needed parameters for the requested operation and issues a corresponding supervisor call.</li>
+									<li><strong>Supervisor call (kernel call):</strong> Privileged instruction that automatically transfers execution control to a well-defined location within the OS kernel. Thus, supervisor calls provide the interface between the OS kernel and the higher-level software</li>
+									<li><strong>Interrupt:</strong> Event that diverts the current execution of a program to a predefined location in the kernel in order to respond to an event. Triggered by a hardware signal sent to the CPU from an external device.</li>
+									<li><strong>Trap:</strong> AKA internal interrupt. Triggered by the currently executing instruction</li>
+									<li><strong>Interrupt handler:</strong> Kernel function invoked whenever an interrupt occurs</li>
+									<li><strong>Moore’s Law:</strong> Formulated by Gordon Moore, it is the observation that the number of transistors in an integrated circuit doubles about every two years.</li>
+									<li><strong>Bus:</strong> General-purpose computer system that has one or more CPUs and a number of devices connected through a common bus that provides access between components and shared memory</li>
+									<li><strong>Device driver:</strong> Understands the device controller and provides the rest of the OS with a uniform interface to the device</li>
+									<li><strong>Network computers (thin clients):</strong> Terminals that understand web-based computing are used in place of traditional workstations where more security or easier maintenance is desired</li>
+									<li><strong>Firewalls:</strong> Used to protect networks from security breaches</li>
+									<li><strong>Mobile computing:</strong> Refers to computing on handheld smartphones and tablet computers</li>
+									<li><strong>Compute server system:</strong> Provides an interface to which a client can send a request to perform an action. Example: reading data</li>
+									<li><strong>File-server system:</strong> Provides a file system interface where clients can create, update, read, and delete files. Example: web server that delivers files to clients running web browsers</li>
+									<li><strong>Cloud computing:</strong> Delivers computing, storage, and even applications as a service across a network</li>
+									<ul>
+										<li>Extension of virtualization since it uses it as a base</li>
+									</ul>
+									<li><strong>ASICs:</strong> Performs tasks without an operating system</li>
+								</ul>
+				
+								<h3>Notes</h3>
+								<ul>
+									<li>Resource utilization is improved by multiprogramming, which overlaps CPU-bound and I/O bound computations. Time sharing only switches the CPU among different computations to create the illusion of simultaneous execution, which generally does not improve resource utilization.</li>
+									<li>Multiprogramming and time-sharing are used together: since it requires multiprogramming</li>
+									<li>To make sure no program operates outside of the trusted kernel can use privileged instructions the CPU operates in two different modes indicated by a special mode bit: Kernel mode and User mode</li>
+									<li>Kernel functions can be invoked by any program</li>
+									<li>The kernel can execute privileged and non-privileged instructions</li>
+									<li>When a user logs in the OS starts a GUI or shell</li>
+									<li>Supervisor call aka kernel call can be executed by any program</li>
+									<li>The first digital computer system developed in 1940 used vacuum tubes to represent 0s and 1s</li>
+
+								</ul>
+								<h3>Five generations of computer systems:</h3>
+									<ul>
+										<li><strong>Gen 1: Vacuum tubes</strong>
+											<ul>
+												<li>No OS support</li>
+												<li>All programming was done using machine language</li>
+											</ul>
+										</li>
+										<li><strong>Gen 2: Transistors</strong>
+											<ul>
+												<li>Replaced Vacuum tubes: small and fast switches</li>
+												<li>OS type is batch OS</li>
+												<li>Programming was done in batches of punch cards. Automate compilation, load and execution of programs. Multiprogramming was developed which allows the OS to schedule the execution of jobs to make more efficient use of the CPU and other resources</li>
+											</ul>
+										</li>
+										<li><strong>Gen 3: Integration Circuits</strong>
+											<ul>
+												<li>Allowed the development of microchips to replace individual transistors</li>
+												<li>OS type is Interactive multi-user OS</li>
+												<li>Interrupts were developed to allow the OS to enforce time sharing and to interact with keyboards and displays terminals (which were also developed at the same time). Increased capacity and speed of memory and secondary storage devices imposed additional management tasks on the OS</li>
+											</ul>
+										</li>
+										<li><strong>Gen 4: Very Large Scale Integration (VLSI)</strong>
+											<ul>
+												<li>Allowed placement of a complete microprocessor on a chip leading to the development of PCs</li>
+												<li>OS type is Desktop and laptop OS</li>
+												<li>OS responsible for all operations starting from the initial booting, to multitasking, scheduling, interactions with various peripheral devices, and keeping all information safe. User-friendliness introduced GUI</li>
+											</ul>
+										</li>
+										<li><strong>Gen 5: Networking hardware</strong>
+											<ul>
+												<li>OS type for Supercomputers, distributed systems, and mobile devices</li>
+												<li>Creates powerful chips spawned several directions of development. Supercomputers combined a large number of processors and made the OS and other software responsible for exploiting the increased computation power through parallel processing. Gave rise to the Internet, which imposed requirements of privacy and safety along with efficient communication. Wireless networks led to handheld devices</li>
+											</ul>
+										</li>
+									</ul>
+							
+							
+				</section>
+
+			<!-- Footer -->
+			
+				<section id="footer">
+					<ul class="links">
+						<li>&copy; Untitled. All rights reserved.</li>
+					</ul>
+				</section>	
+				
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

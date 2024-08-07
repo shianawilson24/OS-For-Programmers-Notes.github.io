@@ -1,0 +1,155 @@
+!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>C191 Study Guide -shianawilson24</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header">
+
+					<!-- Logo -->
+						<h1><a href="index.html">C191 Study Guide -shianawilson24</a></h1>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li><a href="#">Lorem ipsum dolor</a></li>
+										<li><a href="#">Magna phasellus</a></li>
+										<li><a href="#">Etiam dolore nisl</a></li>
+										<li>
+											<a href="#">Phasellus consequat</a>
+											<ul>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam dolore nisl</a></li>
+												<li><a href="#">Veroeros feugiat</a></li>
+												<li><a href="#">Nisl sed aliquam</a></li>
+												<li><a href="#">Dolore adipiscing</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Veroeros feugiat</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Units 1-3</a></li>
+								<li class="current"><a href="right-sidebar.html">Units 4-6</a></li>
+								<li><a href="no-sidebar.html">Units 7-9</a></li>
+								<li><a href="tentotwelve.html">Units 10-12</a></li>
+								
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post">
+								<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+								<header>
+									<h2>Units 4-6</h2>
+									<p>Vocab</p>
+								</header>
+                                <h3>1. Necessary Conditions:</h3>
+                                <br>
+                                <ul>
+                                    <li><strong>Mutual Exclusion:</strong> At least one resource must be held in a non-shareable mode.</li>
+                                    <li><strong>Hold and Wait:</strong> Processes currently holding resources may request additional resources while waiting for others to release theirs.</li>
+                                    <li><strong>No Preemption:</strong> Resources cannot forcibly be taken from a process.</li>
+                                    <li><strong>Circular Wait:</strong> There must be a circular chain of two or more processes, each waiting for a resource held by the next process in the chain.</li>
+                                </ul>
+                            
+                                <h3>2. Resource Allocation Graph:</h3>
+                                <br>
+                                <p><strong>Definition:</strong> A graphical representation of the allocation of resources in an OS and the relationship between processes and resources.</p>
+                                <ul>
+                                    <li><strong>Nodes:</strong>
+                                        <ul>
+                                            <li>Processes (represented as circles).</li>
+                                            <li>Resources (represented as squares).</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Edges:</strong>
+                                        <ul>
+                                            <li><strong>Request Edge (r):</strong> Represents a process requesting a resource.</li>
+                                            <li><strong>Assignment Edge:</strong> Represents a resource being allocated to a process.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            
+                                <h3>3. Methods for Handling Deadlocks:</h3>
+                                <br>
+                                <ul>
+                                    <li><strong>Deadlock Prevention:</strong> Ensures that at least one of the necessary conditions for deadlock cannot hold.</li>
+                                    <li><strong>Deadlock Avoidance:</strong>
+                                        <ul>
+                                            <li>Allows the system to allocate resources only if it can guarantee that the system will remain in a safe state.</li>
+                                            <li><strong>Safe State:</strong> A state in which the system can allocate resources to each process in some order and still avoid a deadlock.</li>
+                                            <li><strong>Banker's Algorithm:</strong> Checks if the system can allocate requested resources without entering an unsafe state.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Deadlock Detection:</strong> Used if a system does not employ either a deadlock prevention or a deadlock avoidance algorithm, allowing deadlocks to occur.
+                                        <ul>
+                                            <li><strong>Wait-for Graph:</strong> Represents threads waiting for other threads to release resources they need.
+                                                <ul>
+                                                    <li>Derived from the resource allocation graph by removing resource nodes and collapsing appropriate edges.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Benefits:</strong> Allows for detecting deadlocks and determining better resource allocation strategies.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Deadlock Recovery:</strong> The process of resolving deadlocks that have already occurred in a system. It involves breaking the deadlock and restoring system functionality.
+                                        <ul>
+                                            <li><strong>Steps to Deadlock Recovery:</strong>
+                                                <ul>
+                                                    <li>Process Termination: Abort one or more processes to break the circular wait.</li>
+                                                    <li>Resource Preemption: Temporarily take resources from some processes and give them to others.</li>
+                                                    <li>Rollback: Rollback one or more processes to a previous safe state.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            
+                                <h3>Additional Important Points:</h3>
+                                <br>
+                                <ul>
+                                    <li><strong>Understanding Deadlocks:</strong> Deadlocks are a significant problem in concurrent systems where multiple processes or threads compete for limited resources. They can cause the system to halt and require intervention to resolve.</li>
+                                    <li><strong>Practical Implications:</strong> In real-world systems, deadlock prevention and avoidance techniques are crucial to ensure system reliability and performance. Effective deadlock detection and recovery mechanisms are necessary to handle unexpected deadlock situations gracefully.</li>
+                                </ul>
+							
+						
+
+					</div>
+				</section>
+
+			<!-- Footer -->
+			
+			<section id="footer">
+				<ul class="links">
+					<li>&copy; Untitled. All rights reserved.</li>
+				</ul>
+			</section>	
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
